@@ -1,0 +1,22 @@
+{
+  "name": "ingress-consul",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@kubernetes/client-node": "^0.17.1",
+    "@types/consul": "^0.40.0",
+    "@types/node": "^18.7.23",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "consul": "^1.0.1",
+    "eslint": "^8.24.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "scripts": {
+    "start": "nodemon ./src/main.ts",
+    "init-tsc": "tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true"
+  }
+}
